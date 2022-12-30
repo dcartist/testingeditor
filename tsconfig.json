@@ -20,6 +20,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
+  // "compilerOptions": {
+  //   "rootDir": "src",
+  //   "outDir": "build"
+  // },
   "include": [
     "src"
   ]
