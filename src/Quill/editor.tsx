@@ -7,6 +7,9 @@ export default function Editor() {
     const [value, setValue] = useState('');
     console.log(value)
     console.log(typeof value)
+    const editorStyle = { 'height': '500px' }
+
+
    const  modules = {
         toolbar: [
           [{ 'header': [1, 2, false] }],
@@ -25,7 +28,7 @@ export default function Editor() {
       ]
   return (
     <div>
-        <ReactQuill theme="snow" value={value} onChange={setValue}  modules={modules} formats={formats} />
+        <ReactQuill theme="snow" style={editorStyle} value={value} onChange={setValue}  modules={modules} formats={formats} />
         {/* <ReactQuill theme="snow" value={value} onChange={setValue} /> */}
     </div>
   )
